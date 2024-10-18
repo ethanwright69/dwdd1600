@@ -1,0 +1,144 @@
+/* ------------------------------------------------------------------------body stuff here */
+body {
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 18px;
+    color: #3a3330;
+}
+
+/* ------------------------------------------------------------------------header stuff here */
+header {
+    background-color: #fff7eb;
+    padding: 1rem 2vw;
+}
+header h1 {
+    margin:0;
+    font-size: 4rem;
+    color: #f3b273;
+}
+header p {
+    margin: -.75vw 0 0 0;
+    color: #3a3330;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+/* ------------------------------------------------------------------------nav here */
+nav {
+    background-color: #3a3330;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #f7ead2;
+    font-weight: 700;
+    display: block;
+    padding: .8rem 1.5rem;
+}
+nav li.active a {
+    background-color: #f3b273;
+        color: #3a3330;
+}
+nav a:hover {
+    color: #f3b273;
+}
+
+/* ------------------------------------------------------------------------main here */
+main {
+    padding: 1rem 2%;
+}
+main h1{
+    color: #3a3330;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    background-color: #f7ead2;
+    padding: .5rem;
+    border-radius: .75rem;
+    text-align: center;
+}
+main h2{
+    color: #c96928;
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+main p{
+    color: #3a3330;
+    margin: 0;
+}
+main ol{
+    padding: .5rem 4vw;
+    background-color: #efefef;
+    margin: .5rem 0;
+}
+main ul{
+    list-style-type: square;
+}
+main dl dt{
+    color: #3a3330;
+    font-weight: 700;
+}
+main dl dd{
+    color: #3a3330;
+    margin-bottom: 1.1rem;
+}
+main address {
+    font-style: normal;
+    background-color: #f7ead2;
+    padding: .5rem;
+    width: 12.2rem;
+    border: 1px solid #c96928;
+    border-radius: .75rem;
+}
+main a {
+    color: #436a75;
+}
+main a:hover{
+    color: #979891;
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 1% 1%;
+    float: right;
+}
+figure.wrapped img{
+    width: 100%;
+    height:auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: 0 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    color: #3a3330;
+    margin-bottom: 5%;
+}
+
+/* ------------------------------------------------------------------------footer here */
+footer {
+    background-color: #3a3330;
+    text-align: center;
+    color: #efefef;
+    font-size: .8rem;
+    padding: .05rem;
+}
+footer a {
+    color: #efefef;
+}
