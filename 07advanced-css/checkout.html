@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Goldfish Hypermarket: Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Prestigious hub for purchashing specialty goldfish and goldfish food">
+        <meta name="author" content="Ethan Wright">
+        <link rel="stylesheet" href="goldfish.css">
+        <link rel="stylesheet" href="https://use.typekit.net/tqy6lxz.css">
+        <link rel="preconnect" href="https://use.typekit.net/tqy6lxz.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!--Start of the page header-->
+        <header>
+            <img src="images/gh_logo.png" alt="goldfish hypermarket logo" width="100" height="auto" class="logo">
+            <div>
+                <h1>Goldfish Hypermarket</h1>
+                <p>"Yea, that's a fishdeluxe"</p>
+            </div>
+        </header>
+        <!--Start of the page navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="fish.html">Fish</a></li>
+                <li class="active"><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+        <!--Start of the page main-->
+        <main>
+            <h1>Checkout</h1>
+            <form method="get" class="myForm" action="thanks.html">
+                <fieldset>
+                    <legend>Address</legend>
+                        <label>First Name* 
+                            <input type="text" name="fname" required>
+                        </label>
+                        <label>Last Name*
+                            <input type="text" name="lname" required>
+                        </label>
+                        <label>Street Address*
+                            <input type="text" name="address" required>
+                        </label>
+                        <label>City*
+                            <input type="text" name="city" required>
+                        </label>
+                        <label>State/Prefecture/Province/etc.*
+                            <input type="text" name="state" required>
+                        </label>
+                        <label>Country*
+                            <select name="country" required>
+                                <option value="">Select</option>
+                                <option value="australia">Australia</option>
+                                <option value="bangladesh">Bangladesh</option>
+                                <option value="bhutan">Bhutan</option>
+                                <option value="cambodia">Cambodia</option>
+                                <option value="canada">Canada</option>
+                                <option value="china">China</option>
+                                <option value="india">India</option>
+                                <option value="indonesia">Indonesia</option>
+                                <option value="japan">Japan</option>
+                                <option value="laos">Laos</option>
+                                <option value="malaysia">Malaysia</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="mongolia">Mongolia</option>
+                                <option value="myanmar">Myanmar</option>
+                                <option value="nepal">Nepal</option>
+                                <option value="newzealand">New Zealand</option>
+                                <option value="philippines">Philippines</option>
+                                <option value="singapore">Singapore</option>
+                                <option value="korea">South Korea</option>
+                                <option value="taiwan">Taiwan</option>
+                                <option value="thailand">Thailand</option>
+                                <option value="usa">United States</option>
+                                <option value="vietnam">Vietnam</option>
+                            </select>
+                        </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Method</legend>
+                        <label>
+                            <input type="radio" name="method" value="debit">Debit
+                        </label>
+                        <label>
+                            <input type="radio" name="method" value="credit">Credit
+                        </label>
+                        <label>Name on Card*
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>Card Number*
+                            <input type="tel" name="card" required>
+                        </label>
+                        <label>Expiration*<br>
+                            <input type="tel" name="expiration" placeholder="00/0000" required>
+                        </label>
+                        <label>CVV*
+                            <input type="tel" name="cvv" required>
+                        </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Info</legend>
+                        <label>Name*
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>Email*
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>Phone Number
+                            <input type="tel" name="phone">
+                        </label>
+                        <label>Allow:</label>
+                            <label><input type="checkbox" name="updates" value="selected">Order Updates</label>
+                            <label><input type="checkbox" name="offers" value="selected">Offers</label>
+                            <label><input type="checkbox" name="marketing" value="selected">Marketing</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Instructions</legend>
+                        <textarea name="comments" placeholder="Special instructions here"></textarea>
+                </fieldset>
+                <input type="submit" value="Place Order"> 
+            </form>
+        </main>
+        <!--Start of the page footer-->
+        <footer>
+            <p>&copy;2024 &bull; Ethan Wright &bull; <a href="mailto:goldfishhypermarket@mail.com">goldfishhypermarket@mail.com</a> &bull; <a href="tel:6257246779">1-625-724-6779</a></p> 
+        </footer>
+    </body>
+</html>
