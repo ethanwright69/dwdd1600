@@ -1,0 +1,378 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+/* ------------------------------------------------------------------------max width here */
+main {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+header, nav, footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------body stuff here */
+body {
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 18px;
+    color: #3a3330;
+}
+
+/* ------------------------------------------------------------------------header stuff here */
+    /* small screens*/
+    @media only screen and (max-width: 800px) {
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3vw;
+        }
+        header {
+            background-color: #fff7eb;
+            padding: 1rem 2vw;
+        }
+        header div{
+            padding-left: 1vw;
+        }
+        header h1 {
+            margin:0 0 0 0;
+            font-size: 2.3rem;
+            color: #3a3330;
+            text-align: center;
+        }
+        header p {
+            margin: -.45vw 0 0 0;
+            color: #3a3330;
+            font-family: "condor", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    } /* end of media query */
+
+    /* big screens*/
+    @media only screen and (min-width: 801px) {
+        header {
+            background-color: #fff7eb;
+            padding: 1rem 2vw;
+            display: flex;
+            align-items: flex-start;
+        }
+        header div{
+            padding-left: 1vw;
+        }
+        header h1 {
+            margin:0 0 0 0;
+            font-size: 2.3rem;
+            color: #3a3330;
+        }
+        header p {
+            margin: -.45vw 0 0 0;
+            color: #3a3330;
+            font-family: "condor", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1.4rem;
+        }
+    } /* end of media query */
+
+/* ------------------------------------------------------------------------nav here */
+
+            /* small screens*/
+    @media only screen and (max-width: 800px) {
+        nav {
+            background-color: #3a3330;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0 2vw;
+            list-style-type: none;
+            padding: 1rem;
+        }
+        nav a {
+            display: block;
+            padding: .8rem;
+            text-decoration: none;
+            font-weight: 700;
+            color: #f7ead2;
+            text-align: center;
+        }
+        nav li.active a {
+            color: #3a3330;
+            background-color: #f3b273;
+            border-radius: .75rem;
+        }
+    } /* end of media query */
+    
+            /* big screens*/
+    @media only screen and (min-width: 801px) {
+        nav {
+            background-color: #3a3330;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0 2vw;
+            margin: 0;
+            display: flex;
+        }
+        nav a {
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: #f7ead2;
+            font-weight: 700;
+            display: block;
+            padding: .8rem 1.5rem;
+        }
+        nav li.active a {
+            background-color: #f3b273;
+                color: #3a3330;
+        }
+        nav a:hover {
+            color: #f3b273;
+        }
+    } /* end of media query */
+
+/* ------------------------------------------------------------------------main here */
+main {
+    padding: 1rem 2%;
+}
+.hero {
+    margin: 0;
+    width: 100%;
+}
+.hero img {
+    height: auto;
+    width: 100%;
+}
+main h1{
+    color: #3a3330;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    background-color: #f7ead2;
+    padding: .5rem;
+    border-radius: .75rem;
+    text-align: center;
+}
+main h2{
+    color: #c96928;
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+main p{
+    color: #3a3330;
+    margin: 0;
+}
+main ol{
+    padding: .5rem 4vw;
+    width: 257px;
+    background-color: #efefef;
+    margin: .5rem 0;
+}
+hr.line2 {
+    margin-top: 2rem;
+    border-top: 2px solid #979891;
+}
+.video {
+    margin: 2rem 0 0 0;
+}
+.videocap {
+    text-align: center;
+    color: #605a58;
+    margin-bottom: 3rem;
+}
+.return {
+    font-family: "condor", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+.audiocap {
+    color: #605a58;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main ul{
+    list-style-type: square;
+}
+main dl dt{
+    color: #3a3330;
+    font-weight: 700;
+}
+main dl dd{
+    color: #3a3330;
+    margin-bottom: 1.1rem;
+}
+main address {
+    margin-top: 1.5rem;
+    font-style: normal;
+    background-color: #f7ead2;
+    padding: .5rem;
+    width: 13.5rem;
+    border: 1px solid #c96928;
+    border-radius: .75rem;
+}
+main a {
+    color: #436a75;
+}
+main a:hover{
+    color: #979891;
+}
+hr.line {
+    border-top: 1px solid #3a3330;
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 1% 1%;
+    float: right;
+}
+figure.wrapped img{
+    width: 100%;
+    height:auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+div.gallery figure img:hover {
+    box-shadow: 0px 32px 0 0 #f3b273;
+    border: #f3b273 solid 6px;
+}
+div.gallery figure img {
+    border-radius: 1.5rem;
+}
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    color: #3a3330;
+    margin-bottom: 5%;
+}
+.sold {
+    margin-bottom: 5vw;
+}
+.myForm fieldset {
+    border: 2px solid #3a3330; 
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+.myForm legend {
+    color: #3a3330;
+    font-size: 1rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    display: block;
+}
+.myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    border: solid 1.5px #3a3330;
+    padding: .3rem;
+    width: 260px;
+    border-radius: .3rem;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    color: #3a3330;
+}
+.myForm select {
+    display: block;
+    border: solid 1.5px #3a3330;
+    padding: .3rem;
+    width: 400px;
+    border-radius: .3rem;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    color: #3a3330;
+}
+.myForm [name=country] {
+    width: 260px;
+}
+.myForm [type=radio], .myForm [type=checkbox] {
+    accent-color: #c96928;
+}
+.myForm textarea {
+    height: 100px;
+    margin: .5rem 0;
+}
+.myForm [type=submit] {
+    background-color: #f3b273;
+    border: #3a3330 2px;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: #3a3330;
+    font-family: "condor", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 0 1vw .8vw;
+}
+.myForm [type=submit]:hover {
+    background-color: #3a3330;
+    border: #3a3330 2px;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    font-family: "condor", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 0 1vw .8vw;
+}
+table.fish-food {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+table.fish-food th {
+    background-color: #f3b273;
+    color: white;
+    padding: 1.5rem 2vw;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+}
+table.fish-food td {
+    color: #3a3330;
+    padding: 1rem 2vw;
+}
+table.fish-food tr:nth-child(even) {
+    background-color: #fff7eb;
+}
+table.fish-food tr:nth-child(odd) {
+    background-color: #f7ead2;
+}
+table.fish-food tr:hover {
+    background-color: rgba(58, 51, 48, 0.2);
+}
+
+/* ------------------------------------------------------------------------footer here */
+footer {
+    background-color: #3a3330;
+    background-image: linear-gradient(#605a58, #3a3330);
+    text-align: center;
+    color: #efefef;
+    font-size: .8rem;
+    padding: .05rem;
+}
+footer a {
+    color: #efefef;
+}
+
